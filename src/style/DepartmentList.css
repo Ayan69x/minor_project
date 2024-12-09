@@ -1,0 +1,120 @@
+/* General container */
+.department-management-container {
+    max-width: '100%';
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f7f9fc;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 5rem;
+  }
+  
+  /* Heading */
+  .department-management-container h2 {
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  /* Table */
+  .department-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+  
+  .department-table thead {
+    background-color: #1976d2;
+    color: white;
+  }
+  
+  .department-table th, 
+  .department-table td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .department-table th {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+  }
+  
+  /* Buttons */
+  .add-department-button {
+    background-color: #1976d2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-department-button:hover {
+    background-color: #115293;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .edit-button {
+    background-color: #ffc107;
+    color: white;
+    padding: 6px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-button:hover {
+    background-color: #d39e00;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+    color: white;
+    padding: 6px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Dialog Form Styling */
+  .dialog-form {
+    padding: 20px;
+  }
+  
+  .dialog-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .dialog-actions button {
+    font-size: 1rem;
+  }
+  

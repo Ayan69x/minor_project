@@ -1,0 +1,209 @@
+/* Container for the job posting form */
+.post-job-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-job-container h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Form styling */
+  .post-job-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-group label {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .post-job-form label {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .post-job-form input,
+  .post-job-form select,
+  .post-job-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .post-job-form textarea {
+    resize: vertical;
+    min-height: 100px;
+    max-height: 300px;
+  }
+
+  
+  /* General button styling */
+  .post-job-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .skills-input-wrapper {
+    display: flex;
+    align-items: center; /* Align input with the skill chips */
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    flex-wrap: wrap;
+    row-gap: 8px; /* gapping between two lines */
+    overflow-x: auto; /* Allow scrolling if the skills exceed the container width */
+  }
+  
+.skills-input-wrapper input {
+    border: none;
+    padding: 5px;
+    outline: none;
+    min-width: 100px;
+    flex: 1; /* Ensure the input takes up remaining space */
+  }
+  
+.skill-chip {
+    background-color: #7f848a;
+    color: white;
+    height: 35px;
+    padding: 5px 10px;
+    margin-right: 5px; /* Add spacing between skill chips */
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    white-space: wrap; /* Prevent text wrapping within a skill chip */
+  }
+  
+.skill-chip button {
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+.skill-chip::after {
+    content: '';
+    display: inline-block;
+  }
+  
+  
+  
+  /* Submit button (green) */
+  .submit-btn {
+    background-color: #28a745;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .submit-btn i {
+    margin-right: 8px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Reset button (red) */
+  .reset-btn {
+    background-color: #dc3545;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .reset-btn i {
+    margin-right: 8px;
+  }
+  
+  .reset-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Form actions layout */
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-actions button {
+    flex: 1;
+    margin: 0 5px;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    .post-job-container {
+      padding: 15px;
+    }
+  
+    .form-actions button {
+      margin: 10px 0;
+    }
+  
+    .form-group {
+      flex-direction: column;
+    }
+  
+    .form-group label {
+      margin-right: 0;
+    }
+  }
+  
+  /* Loading, error, success messages */
+  .loading,
+  .error,
+  .success {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  .error {
+    color: #ff0000;
+    font-size: 0.8em;
+  }
+  
+  .success {
+    color: #68ca68;
+  }
+  
+  .remove-button {
+    /* background-color: transparent; */
+    border: none; /* Remove border */
+    color: #dc3545; /* Set text color to match the danger theme */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    padding: 0; /* Adjust padding as needed */
+  }
+  
+  .remove-button:hover {
+    text-decoration: underline; /* Optional: Add an underline on hover for better UX */
+  }
+  

@@ -1,0 +1,103 @@
+.employeeFormContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  background-color: #f0f2f5; /* Soft background color for contrast */
+  margin-top: 5rem;
+}
+
+.employeeFormCard {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px; /* More rounded corners for a modern feel */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  width: 420px; /* Slightly increased width for a balanced layout */
+  transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.employeeFormCard:hover {
+  transform: scale(1.02); /* Slight scale-up effect on hover for interactivity */
+}
+
+.formTitle {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px; /* Increased font size */
+  font-weight: 600; /* Bold for the title */
+  color: #333; /* Darker color for better readability */
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px; /* Slightly increased padding for better input size */
+  margin: 12px 0;
+  border: 1px solid #ddd; /* Softer border color */
+  border-radius: 6px; /* More rounded corners for a modern feel */
+  font-size: 16px; /* Slightly increased font size */
+  background-color: #f9f9f9; /* Light background for inputs */
+  transition: border-color 0.3s ease; /* Smooth border color change on focus */
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #007BFF; /* Blue border on focus */
+  outline: none;
+  background-color: #fff; /* Clearer background on focus */
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing for textareas */
+  min-height: 100px; /* Minimum height for a good textarea size */
+}
+
+.submitButton {
+  width: 100%;
+  padding: 12px;
+  background-color: #007BFF; /* Primary button color */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600; /* Bold button text */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.submitButton:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4); /* Subtle shadow on hover */
+}
+
+.submitButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.errorMessage {
+  color: #e74c3c; /* Vibrant red for error messages */
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px; /* Slight margin for spacing */
+}
+
+/* Add responsive design for smaller screens */
+@media (max-width: 768px) {
+  .employeeFormCard {
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .formTitle {
+    font-size: 20px; /* Adjusted title font size for smaller screens */
+  }
+
+  input, select, textarea {
+    font-size: 14px; /* Smaller font size for inputs on mobile */
+  }
+
+  .submitButton {
+    font-size: 14px; /* Adjusted button size */
+  }
+}

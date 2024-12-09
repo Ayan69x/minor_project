@@ -1,0 +1,121 @@
+/* Main container styling */
+.employeeListContainer {
+  padding: 20px;
+  margin-top: 5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.employeeListHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.employeeListHeader h2 {
+  font-size: 1.6rem;
+  color: #333333;
+  font-weight: 600;
+}
+
+/* Add button styling */
+.addEmployeeButton {
+  background-color: #1976d2;
+  color: #ffffff;
+  padding: 10px 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.addEmployeeButton:hover {
+  background-color: #1565c0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Table styling */
+.employeeTable {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.employeeTable th {
+  background-color: #f0f4f8;
+  color: #555555;
+  font-weight: 600;
+  padding: 14px;
+}
+
+.employeeTable td {
+  padding: 12px;
+  color: #333333;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.employeeTable tr:nth-child(even) td {
+  background-color: #f9f9f9;
+}
+
+.employeeTable tr:hover td {
+  background-color: #e8f0fe;
+  transition: background-color 0.3s ease;
+}
+
+/* Action buttons styling */
+.actionButtons {
+  display: flex;
+  gap: 12px;
+}
+
+.editButton, .deleteButton {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.editButton {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+.editButton:hover {
+  background-color: #388e3c;
+}
+
+.deleteButton {
+  background-color: #e53935;
+  color: #ffffff;
+}
+
+.deleteButton:hover {
+  background-color: #d32f2f;
+}
+/* Employee information in a single cell */
+.employeeInfo {
+  padding: 6px 0;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.employeeInfo span {
+  display: block;
+}
+
+.employeeDivider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 4px 0;
+}

@@ -1,0 +1,126 @@
+/* LeaveHistory.module.css */
+
+.historyContainer {
+  padding: 30px;
+  background-color: #f0f4f8;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.header {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+/* LeaveHistory.module.css */
+
+.dashboardButton {
+  background-color: #1976d2;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dashboardButton:hover {
+  background-color: #125ca1;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.leaveTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.leaveTable th {
+  background-color: #007bb5;
+  color: #fff;
+  padding: 15px;
+  text-align: left;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  border-bottom: 2px solid #005b8c;
+}
+
+.leaveTable td {
+  padding: 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+.leaveTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+.leaveTable td:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+.leaveTable td button {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+
+.leaveTable td button:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.alert {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+button.primary {
+  background-color: #1976d2;
+  color: #fff;
+}
+
+button.primary:hover {
+  background-color: #155a9d;
+}
+
+button.success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+button.success:hover {
+  background-color: #218838;
+}
+
+button.error {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+button.error:hover {
+  background-color: #c82333;
+}
